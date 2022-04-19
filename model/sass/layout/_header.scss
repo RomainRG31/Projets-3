@@ -1,0 +1,9 @@
+header {
+
+    @extend %grid-center;
+
+    & h1 {
+        font-family: 'Shrikhand', cursive;
+    }
+
+}

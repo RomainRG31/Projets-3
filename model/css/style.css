@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+main .commentCaMarche, main .presentation, main .localisation, header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.list-item {
+  padding: 1.5em 1em;
+  text-align: left;
+  border-radius: 1em;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  padding: 1em 1.5em;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn--gradient {
+  background-image: radial-gradient(100% 50% at 20% 10%, #FF79DA 0%, #9356DC 200%);
+}
+.btn--radius {
+  border-radius: 2em;
+}
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  /* Debut section localisation */
+  /* Fin section localisation */
+  /* Debut section presentation */
+  /* Fin section presentation */
+  /* Debut section commentCaMarche */
+  /* Fin section commentCaMarche */
+}
+main .localisation {
+  padding: 1em;
+  background: #eaeaea;
+  background: linear-gradient(180deg, rgba(173, 173, 173, 0.35) 0%, rgba(234, 234, 234, 0.75) 15%, rgb(234, 234, 234) 100%);
+}
+main .localisation i {
+  padding: 0 0.5em 0 0;
+}
+main .presentation {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2em 0 3em;
+  background: #f6f6f6;
+  text-align: center;
+}
+main .presentation h2 {
+  padding: 0 5em;
+}
+main .presentation p {
+  padding: 1em 5em 2em;
+}
+main .commentCaMarche {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3em 1em;
+}
+main .commentCaMarche h2 {
+  grid-row: 1 / auto;
+  grid-column: 1 / 2;
+  justify-self: start;
+}
+main .commentCaMarche ol {
+  grid-row: 2 / auto;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  margin: 1em 1em 0;
+  counter-reset: countsection;
+  justify-self: normal;
+}
+main .commentCaMarche ol li::before {
+  counter-increment: countsection;
+  content: counter(countsection);
+  position: relative;
+  left: -1.9em;
+  padding: 0.3em 0.6em;
+  background-color: #9356DC;
+  border-radius: 70%;
+  color: #ffffff;
+}
+main .commentCaMarche ol li:hover {
+  background-color: #f2eafb;
+}
+main .commentCaMarche ol li:hover i {
+  color: #9356DC;
+}
+main .commentCaMarche ol p {
+  display: inline-block;
+  position: relative;
+  left: -0.7em;
+}
+main .commentCaMarche ol i {
+  padding: 0 1.1em 0 0;
+}
